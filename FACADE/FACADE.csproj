@@ -46,6 +46,7 @@
     <Compile Include="Lighting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TVfacade.cs" />
     <Compile Include="TVset.cs" />
     <Compile Include="Volume.cs" />
   </ItemGroup>

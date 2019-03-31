@@ -30,7 +30,7 @@ namespace FACADE
             Console.WriteLine("Watch channel №: {0}", channel);
         }
 
-        public void MovieFromUsb(string movieNumber)
+        public void MovieFromUsb(ushort movieNumber)
         {
             Console.WriteLine("Whatch movie№: {0}", movieNumber);
         }
