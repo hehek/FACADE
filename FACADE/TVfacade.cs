@@ -19,7 +19,7 @@ namespace FACADE
 
         public void OnMovie()
         {
-            lighting.lightForTv();
+            lighting.lightOff();
             tvSet.On();
             tvSet.OnVolume(50);
             tvSet.MovieFromUsb(2);           
@@ -27,13 +27,14 @@ namespace FACADE
 
         public void OffMovie()
         {
-            lighting.lightOn();
-            tvSet.changeChannel(1);
+            
+            offTV();
         }
 
         public void watchTV()
         {
-            lighting.lightOn();
+
+            lighting.lightForTv();
             tvSet.On();
             tvSet.OnVolume(50);
             tvSet.changeChannel(2);
@@ -41,7 +42,7 @@ namespace FACADE
         }
         public void offTV()
         {
-            lighting.lightOff();
+            lighting.lightOn();
             tvSet.OffVolume();
             tvSet.Off();
 
